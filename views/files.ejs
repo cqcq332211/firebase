@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Remove default link styling */
+        a {
+            text-decoration: none;
+            color: inherit; /* Inherit text color */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+    </style>
+    
+</head>
+<body>
+    <pre>
+        <% files.forEach(file => { %>
+            <a href="/download/<%= file.name %>" download><%= file.name %></a>
+        <% }); %>
+    </pre>       
+</body>
+</html>
