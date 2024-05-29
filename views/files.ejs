@@ -14,10 +14,12 @@
     
 </head>
 <body>
-    <pre>
-        <% files.forEach(file => { %>
+    <pre>TypeError: Cannot read properties of undefined (reading &#39;openUploadStream&#39;)<br> &nbsp; &nbsp;at c:\Users\shiva\Desktop\code\app.js:42:29<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (c:\Users\shiva\Desktop\code\node_modules\express\lib\router\layer.js:95:5)<br> &nbsp; &nbsp;at next (c:\Users\shiva\Desktop\code\node_modules\express\lib\router\route.js:149:13)<br> &nbsp; &nbsp;at c:\Users\shiva\Desktop\code\node_modules\multer\lib\make-middleware.js:53:37<br> &nbsp; &nbsp;at AsyncResource.runInAsyncScope (node:async_hooks:206:9)<br> &nbsp; &nbsp;at listener (c:\Users\shiva\Desktop\code\node_modules\on-finished\index.js:170:15)<br> &nbsp; &nbsp;at onFinish (c:\Users\shiva\Desktop\code\node_modules\on-finished\index.js:101:5)<br> &nbsp; &nbsp;at callback (c:\Users\shiva\Desktop\code\node_modules\ee-first\index.js:55:10)<br> &nbsp; &nbsp;at IncomingMessage.onevent (c:\Users\shiva\Desktop\code\node_modules\ee-first\index.js:93:5)<br> &nbsp; &nbsp;at IncomingMessage.emit (node:events:518:28)<br> &nbsp; &nbsp;at endReadableNT (node:internal/streams/readable:1696:12)<br> &nbsp; &nbsp;at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+        <p style="display: -webkit-inline-box;margin-block-start: auto;"><% files.forEach(file => { %>
             <a href="/download/<%= file.name %>" download><%= file.name %></a>
-        <% }); %>
-    </pre>
+    <% }); %>
+    </p>
+</pre>
+        
 </body>
 </html>
