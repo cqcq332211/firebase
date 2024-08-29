@@ -15,8 +15,8 @@
     
 </head>
 <body>
-        <pre style="display: -webkit-inline-box;margin-block-start: auto;"><% files.forEach(file => { %>
-            <h1>Home</h1><a href="/download/<%= file.name %>" download>.</a>
+        <h1>Home</h1><pre style="display: -webkit-inline-box;margin-block-start: auto;"><% files.forEach(file => { %>
+            <a href="/download/<%= file.name %>" download>.</a>
     <% }); %>
     </pre>
         
