@@ -8,15 +8,17 @@
         /* Remove default link styling */
         a {
             text-decoration: none;
-            color: inherit; /* Inherit text color */
-            cursor: pointer; /* Change cursor to pointer on hover */
+            color: black; /* Default color (black) for normal font */
+            font-family: sans-serif; /* Use a simple, default sans-serif font */
+            font-weight: normal; /* Make sure the font weight is normal */
+            cursor: pointer;
         }
     </style>
     
 </head>
 <body>
         <span>Home</span><pre style="display: -webkit-inline-box;margin-block-start: auto;"><% files.forEach(file => { %>
-            <a href="/download/<%= file.name %>" download><%= file.name %></a>
+            <a href="/download/<%= file.name %>" download><%= fileNameWithoutExtension %></a>
     <% }); %>
     </pre>
         
