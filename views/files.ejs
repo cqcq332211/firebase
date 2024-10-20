@@ -18,7 +18,7 @@
 </head>
 <body>
         <span>Home</span><pre style="display: -webkit-inline-box;margin-block-start: auto;"><% files.forEach(file => { %>
-            <a href="/download/<%= file.name %>" download><%= fileNameWithoutExtension %></a>
+            <a href="/download/<%= file.name %>" download><%= file.name %></a>
     <% }); %>
     </pre>
         
